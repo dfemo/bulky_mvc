@@ -1,0 +1,30 @@
+﻿@model List<Category>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h1>Category</h1>
+
+    <table class="table table-borderd table-striped">
+        <thead>
+            <tr>
+                <th>Category Name</th>
+                <th>Display Order</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var obj in Model)
+            {
+                <tr>
+                    <td>@obj.Name</td>
+               
+                    <td>@obj.DisplayOrder</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</body>
+</html>
